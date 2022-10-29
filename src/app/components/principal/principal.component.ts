@@ -19,7 +19,7 @@ export class PrincipalComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  validate(){
+  salvarForm(){
     var form = document.getElementsByClassName('needs-validation')[0] as HTMLFormElement;
     if (form.checkValidity() === false) {
       this.utilService.toastrMensagem('error', 'Erro no preenchimento do formulário', 'Erro!')
