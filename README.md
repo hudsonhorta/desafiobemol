@@ -1,27 +1,45 @@
-# BdCadastro
+<h1>Desafio Bemol - Cadastro de Clientes</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/static/v1?label=angular&message=framework&color=red&style=for-the-badge&logo=Angular"/>
+  <img src="https://img.shields.io/static/v1?label=Node&message=deploy&color=blue&style=for-the-badge&logo=Node"/>
+  <img src="https://img.shields.io/static/v1?label=Heroku&message=server&color=lylas&style=for-the-badge&logo=Heroku"/>
+  <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
+  <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
+</p>
 
 Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 
-## Development server
+## Demo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Para visualização do projeto rodando, o mesmo está disponibilizado no servidor Heroku, no link:
 
-## Code scaffolding
+https://dbemol-hudson.herokuapp.com/
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Requisitos para uso do Código Fonte
 
-## Build
+É necessário ter instalado:
+- Node e NPM : https://nodejs.org/en/
+- Angular: Instalar através do comando [npm install -g @angular/cli] (maiores informações em https://angular.io/guide/setup-local)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Instalação Código Fonte em Angular
 
-## Running unit tests
+* Para instalar e ter acesso ao código fonte em angular, é necessário clonar o repositorio no link: https://github.com/hudsonhorta/desafiobemol.git 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* Fazer instalação das dependencias com o comando [NPM INSTALL --force]
 
-## Running end-to-end tests
+## Servidor Local de Desenvolvimento
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Execute [ng serve] para rodar um servidor dev. Navegue até http://localhost:4200/. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
 
-## Further help
+## Caso de Uso
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Esta pequena aplicação é apenas uma demonstração de front-end em Angular usando Bootstrap, e validação do formulário.
+
+Ao informar o CEP o sistema utiliza uma API REST da ViaCEP para retornar os dados do endereço e preencher de forma automática os respectivos campos.
+
+Ao clicar no botão [SALVAR] o sistema realizar a validação do formulário e emite mensagem visual de erro ou sucesso do cadastro.
+
+A mensagem de envio de e-mail confirmando o cadastro é apenas visual, o aplicativo não envia efetualmente um e-mail.
+
+
